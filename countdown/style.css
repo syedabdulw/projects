@@ -1,0 +1,218 @@
+/* import google fonts
+*/
+@import  url('https://fonts.googleapis.com/css2?family=Poppons:weight@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image6.jpg); 
+    background-image: no-repeat;
+    background-attachment : fixed; 
+    background-size: cover;
+}
+.container{
+    width: 920px;
+    height: 500px;
+    margin: 0 auto ;
+    padding: 70px 50px 70px 80px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0 , 0 , 0, .5);
+    background:linear-gradient(120deg,rgba(160, 101, 177,
+    0.7), rgba(4, 131, 160 , 0.7));
+}
+.menu-icon{
+    position: absolute;
+    right: 50px;
+}
+.menu-icon img{
+    width: 38px;
+    cursor: pointer;
+}
+.heading{
+    margin-top: 30px;
+}
+.heading h3{
+    
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    padding: 29px;
+
+    
+}
+.heading h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.countdown{
+    display: flex;
+}
+.countdown .text-btn{
+    width: 285px;
+    margin-top: 10px;
+    transition: .5s all cubic-bezier(0.50, -0.35, 0.50,
+    1.35);
+}
+.countdown .text-btn p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.countdown .text-btn .dt{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.countdown .text-btn a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 18px;
+    border-radius: 15px;
+    background: #ff4489;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+.countdown .countdown-box{
+    width: 490px;
+    display: flex;
+    margin-top: 40px;
+    transition: .5s all cubic-bezier(0.50, -0.35, 0.50,
+    1.35);
+}
+.countdown .countdown-box>div{
+    width: 113px;
+    align-self: flex-end;
+    margin-right: 11px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.countdown .countdown-box .days{
+    height: 100px;
+    background: #00c3e8;
+    box-shadow: 0 0 10px rgba(0, 195, 232, .8);
+    color: #fff;
+}
+.countdown .countdown-box .hours{
+    height: 140px;
+    background: #f86bce;
+    box-shadow: 0 0 10px rgba(248, 107, 206, .8);
+    color: #fff;
+
+}
+.countdown .countdown-box .minutes{
+    height: 180px;
+    background: #00cca4;
+    box-shadow: 0 0 10px rgba(0, 204, 164, .8);
+    color: #fff;
+}
+.countdown .countdown-box .seconds{
+    height: 125px;
+    background: #f0963a;
+    box-shadow: 0 0 10px rgba(240, 150, 58, .8);
+    color: #fff;
+}
+.countdown .countdown-box .count{
+    font-size: 46px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+.countdown .countdown-box .box-text{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+/* // Responsive */
+@media screen and (max-width: 991.98px){
+    .container  {
+        width: 750px;
+    }
+    .countdown .text-btn{
+        width: 220px;
+    }
+    .countdown .countdown-box {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 768.98px){
+    .container{
+        width: 550px;
+        height: 600px;
+        padding: 50px;
+
+    }
+    .heading{
+        margin-top: 35px;
+    }
+    .countdown{
+        flex-direction: column;
+    }
+    .countdown .text-btn{
+        width: 285px;
+    }
+    .countdown .countdown-box{
+        width: 100%;
+    }
+    .countdown .countdown-box .seconds {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 576.98px){
+    .container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 40px;
+
+    }
+    .menu-icon {
+        right: 40px;
+    }
+    .heading{
+        margin-top: 40px;
+    }
+   
+    .countdown .countdown-box{
+        margin-top: 75px;
+    }
+    .countdown .countdown-box .seconds {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    
+    .menu-icon {
+        right: 15px;
+    }
+    .countdown .text-btn{
+        width: 100%;
+    }
+    
+   
+    .countdown .countdown-box .count{
+        font-size: 36px;
+    }
+    .countdown .countdown-box .box-text {
+        font-size: 36px;
+    }
+}

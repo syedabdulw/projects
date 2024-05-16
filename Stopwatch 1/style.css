@@ -1,0 +1,109 @@
+/* 
+Author: Codingscape
+Watch Full Tutorial: https://www.youtube.com/watch?v=EvI-O_WKF4k
+Subscribe for More: https://www.youtube.com/c/codingscape?sub_confirmation=1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background: linear-gradient(#3A9188 50%, #B8E1DD 50%);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.wrapper{
+    position: relative;
+    background: #FFFFFF;
+    width: 400px;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 12px 14px 18px #044A4290;
+}
+
+.wrapper h2{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 1.6rem;
+}
+
+.wrapper .stopwatch{
+    display: flex;
+    height: 180px;
+    width: 180px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 32px;
+    border: 4px solid #3A9188;
+    background: #044A42;
+    color: #FFFFFF;
+}
+
+.stopwatch-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.stopwatch-btn button{
+    width: 100%;
+    margin: 4px;
+    border: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.stopwatch-btn .stopwatch-start{
+    background: #3A9188;
+    color: #FFFFFF;
+    transition: 0.2s ease-in;
+}
+.stopwatch-btn .stopwatch-start:hover{
+    background: #044A42;
+    color: #FFFFFF;
+    transform: scale(1.02);
+}
+
+.stopwatch-btn .stopwatch-stop{
+    background: #333333;
+    color: #FFFFFF;
+    transition: 0.2s ease-in;
+}
+.stopwatch-btn .stopwatch-stop:hover{
+    background: #000000;
+    color: #FFFFFF;
+    transform: scale(1.02);
+}
+
+.stopwatch-btn .stopwatch-reset{
+    background: #EFEFEF;
+    color: #333333;
+    transition: 0.2s ease-in;
+}
+.stopwatch-btn .stopwatch-reset:hover{
+    background: #000000;
+    color: #FFFFFF;
+    transform: scale(1.02);
+}
